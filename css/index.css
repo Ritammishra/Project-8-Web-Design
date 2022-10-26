@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px 80px;
+    background-image: url(../images/backcover.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 10% right;
+    background-attachment: fixed;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    width: 85vh;
+    justify-content: space-between;
+    font-family: 'Roboto';
+}
+nav img{
+    width: 120px;
+}
+nav button{
+    width: 60px;
+    height: 20px;
+    position: relative;
+    right: 90px;   
+}
+.signin-btn{
+    border: none;
+    background: linear-gradient(to right, #965CF2, #FF8ADC);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.nav-menu-icon{
+    display: none;
+}
+.intro-section{
+    display: flex;
+}
+.left-section{
+    position: relative;
+    top: 30vh;
+}
+.left-section h1{
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    bottom: 20vh;
+    color: #3E4794;
+}
+.left-section h4{
+    position: relative;
+    bottom: 15vh;
+    font-family: 'Roboto';
+    line-height: 30px;
+    color: #03020280;
+}
+.left-section button{
+    position: relative;
+    bottom: 10vh;
+}
+
+.left-section button{
+    width: 30vh;
+    height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #965CF2, #FF8ADC);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #fff;
+}
+.imgs-div img:last-child{
+    position: relative;
+    width: 70vh;
+    height: 70vh;
+    top: 8vh;
+    left:12vh;
+}
+.imgs-div img:first-child{
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+@media screen and (max-width:650px){
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgs-div img:last-child{
+        right: 40vh;
+    }
+    .nav-items{
+        display: none;
+    }
+    .vector-img{
+        display: none;
+    }
+   .left-section h1{
+        font-size: 50px;
+    }
+    .left-section h4{
+        font-size: 14px;
+    }
+    .imgs-div img:last-child{
+        top: 20vh;
+        right: 60px;
+    }
+    .signin-btn{
+        left: 10vh;
+    }
+}
+@media screen and (max-width:1011px){
+    .nav-items{
+        width: 50vh;
+        font-size: 14px;
+    }
+    .left-section h1{
+        font-size: 50px;
+    }
+    .left-section h4{
+        font-size: 13px;
+    }
+    .vector-img{
+        display: none;
+    }
+}
+@media screen and (max-width:815px){
+    .nav-items{
+       display: none;
+    }
+}
+
